@@ -1,0 +1,185 @@
+body{
+    background-color: #f7f7f7;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: #8d5dd1;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: #a37dda;
+    color: white;
+    border-radius: 5px;
+}
+
+/*HEADER*/
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+header h1{
+    margin-bottom: 25px;
+}
+
+.profileImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg{
+    width: 260px;
+    border-radius: 50%;
+    box-shadow: 2px 6px 8px rgb(134 151 168 / 50%);
+}
+
+.headerRow{
+    height: 300px;
+}
+
+.rowBtns{
+    padding: 10px;
+}
+
+.coloredTxt{
+    color: #8d5dd1;
+}
+
+
+.coloredBtn{
+    background-color: #8d5dd1;
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin: 5px auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coloredBtn:hover{
+    color: white;
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
+}
+
+.fa-brands{
+    color: #8d5dd1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px; 
+    border: 1px solid #eee;
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 10%);
+}
+
+.fa-brands:hover{
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
+}
+
+.iconsBtns{
+    text-align: center;
+}
+
+/*MAIN*/
+#about, #skills, #projects, #contact{
+    padding-top: 60px;
+}
+
+.sectionTitle {
+    margin: 50px 0 80px 0;
+    padding-top: 10px;
+}
+
+.content {
+    padding: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content{
+    padding: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 25%);
+}
+
+.skill-box{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    margin: 20px;
+}
+
+.icon-img{
+    width: 50px;
+    height: 50px;
+}
+
+.skill-box p{
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.projects-content p {
+    font-size: 14px;
+}
+
+.project-img{
+    height: 200px;
+}
+
+.cardBtn{
+    border: 1px solid rgb(226, 226, 226);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.cardBtn:hover{
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
+}
+
+.contact-content{
+    padding: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+label{
+    font-size: 14px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
