@@ -5,7 +5,7 @@ body{
 /*NAVBAR*/
 .navbar{
     background-color: #8d5dd1;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
 }
 
 .nav-item{
@@ -14,12 +14,12 @@ body{
 
 .nav-link, .navbar-brand {
     color: white;
+    padding: auto;
 }
 
 .nav-link:hover{
     background-color: #a37dda;
-    color: white;
-    border-radius: 5px;
+    color: white;  
 }
 
 /*HEADER*/
@@ -101,7 +101,7 @@ header h1{
 }
 
 .sectionTitle {
-    margin: 50px 0 80px 0;
+    margin: 40px 0 80px 0;
     padding-top: 10px;
 }
 
@@ -120,6 +120,10 @@ header h1{
     font-size: 20px;
     background-color: white;
     border-radius: 20px;
+}
+
+.boldTxt{
+    font-weight: bold;
 }
 
 .card:hover{
@@ -147,19 +151,31 @@ header h1{
     font-size: 14px;
 }
 
+.card-text{
+    min-height: 63px;
+}
+
 .project-img{
     height: 200px;
 }
 
 .cardBtn{
     border: 1px solid rgb(226, 226, 226);
-    padding: 2px 8px;
-    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 10%);
+    padding: 1px 8px;
+    margin-right: 5px;
+    margin-top: 0;
     font-size: 14px;
+    border-radius: 0;
+}
+
+.card{
+    height: 323.5px;
 }
 
 .cardBtn:hover{
-    box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
+    background-color: black;
+    color:white;
 }
 
 .contact-content{
@@ -167,6 +183,15 @@ header h1{
     font-size: 20px;
     background-color: white;
     border-radius: 20px;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 150px;
+}
+
+a.btn.cardBtn{
+    margin-top: 0;
 }
 
 label{
