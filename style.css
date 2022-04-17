@@ -1,25 +1,30 @@
 body{
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    color: #8e8e8e;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 /*NAVBAR*/
 .navbar{
-    background-color: #8d5dd1;
-    padding: 10px 20px 10px 20px;
+    background-color: #fff;
+    padding: 10px 40px;
+    color: #8e8e8e;
 }
 
 .nav-item{
     padding: 0 10px;
+    font-size: 14PX;
 }
 
 .nav-link, .navbar-brand {
-    color: white;
+    color: #8e8e8e;
 }
 
 .nav-link:hover{
-    background-color: #a37dda;
-    color: white;
-    border-radius: 5px;
+    color: #fff;
+    background-color: #474747;
 }
 
 /*HEADER*/
@@ -29,10 +34,12 @@ header{
     justify-content: center;
     align-items: center;
     padding-top: 60px;
+    background-color: #fff;
 }
 
 header h1{
     margin-bottom: 25px;
+    font-weight: 300;
 }
 
 .profileImgBox {
@@ -41,10 +48,14 @@ header h1{
     align-items: center;
 }
 
+.profileTxt {
+    margin-top: 25px;
+}
+
 .profileImg{
     width: 260px;
     border-radius: 50%;
-    box-shadow: 2px 6px 8px rgb(134 151 168 / 50%);
+    margin-bottom: 40px;
 }
 
 .headerRow{
@@ -56,12 +67,16 @@ header h1{
 }
 
 .coloredTxt{
-    color: #8d5dd1;
+    color: #474747;
+    letter-spacing: 0.1em;
 }
 
+p .coloredTxt{
+    font-weight: 500;
+}
 
 .coloredBtn{
-    background-color: #8d5dd1;
+    background-color: #474747;
     color: white;
     text-decoration: none;
     padding: 5px 30px;
@@ -70,6 +85,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 15px;
 }
 
 .coloredBtn:hover{
@@ -78,7 +94,7 @@ header h1{
 }
 
 .fa-brands{
-    color: #8d5dd1;
+    color: #474747;
     background-color: white;
     border-radius: 5px;
     padding: 15px;
@@ -97,7 +113,8 @@ header h1{
 
 /*MAIN*/
 #about, #skills, #projects, #contact{
-    padding-top: 60px;
+    padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 .sectionTitle {
@@ -109,22 +126,12 @@ header h1{
     padding: 50px;
     font-size: 20px;
     background-color: white;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.projects-content{
-    padding: 50px;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.card:hover{
-    box-shadow: 0px 4px 6px rgb(134 151 168 / 25%);
-}
+/*MAIN-SKILLS*/
 
 .skill-box{
     width: 65px;
@@ -134,8 +141,8 @@ header h1{
 }
 
 .icon-img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .skill-box p{
@@ -143,30 +150,70 @@ header h1{
     font-size: 14px;
 }
 
-.projects-content p {
+/*MAIN-PROJECTS*/
+
+.projects-content{
+    padding: 50px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.card{
+    border-radius: 0;
+    height: 330px;
+
+}
+
+.card:hover {
+    box-shadow: 0px 4px 6px rgb(134 151 168 / 25%);
+    cursor: pointer;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 150px;
+    border-radius: 0;
+}
+
+.card-title{
+    color: #474747;
+}
+
+.card-text {
     font-size: 14px;
 }
 
-.project-img{
-    height: 200px;
+.card-skill {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #474747;
 }
 
 .cardBtn{
     border: 1px solid rgb(226, 226, 226);
-    padding: 2px 8px;
-    border-radius: 20px;
+    padding: 1px 8px;
     font-size: 14px;
+    border-radius: 0;
+    margin-right: 5px;
+    margin-top: 0;
 }
 
-.cardBtn:hover{
+.cardBtn:hover {
     box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
+    background-color: #474747;
+    color: #fff;
 }
+
 
 .contact-content{
     padding: 50px;
     font-size: 20px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 20px;
+}
+
+a.btn.cardBtn{
+    margin-top: 0;
 }
 
 label{
