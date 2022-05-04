@@ -97,7 +97,7 @@ header{
 }
 
 .title-box{
-    padding-left: 100px;
+    padding-left: 80px;
     padding-top: 230px;
 }
 
@@ -109,7 +109,7 @@ header{
 
 .header-img{
     width: 600px;
-    margin-left: 0;
+    margin-left: -30px;
     margin-top: 60px;
 }
 
@@ -231,15 +231,10 @@ header{
 /*PROJECTS*/
 #projects{
     background-color: hsl(0, 0%, 95%);
-    padding:80px 0;
+    padding: 90px 0;
+
 }
 
-#projects .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
 
 .card{
     box-shadow: 0px 4px 6px rgb(134 151 168 / 20%);
@@ -320,8 +315,36 @@ input {
 /*CAROUSEL*/
 #carousel{
     background-color: hsl(0, 0%, 95%);
-    justify-content: center;
 }
+
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+  }
+
+  .carousel-inner{
+    padding: 1em;
+}
+.card{
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 
 /*FOOTER*/
