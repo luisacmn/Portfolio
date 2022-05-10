@@ -13,9 +13,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap and Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,12 +29,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <span class="navbar-brand" href="#">Portfolio</span>
+                <span class="navbar-brand" href="#">LN.</span>
                 <a class="nav-languages" href="#home">EN</a>
                 <a class="nav-languages" href="#home">PT</a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -44,7 +46,7 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="#contact">Contact</a>
+                        <a class="nav-link btn btn-primary" id="nav-btn" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,19 +54,21 @@
     </nav>
 
     <header class="container" >
-        <div class="col-lg-6 title-box">
-            <p>Hi! I'm </p>
-            <h1>Luisa Novaes</h1>
-            <h4>I'm a <span class="colored-txt">frontend developer</span></h4>
-            <div>
-                <button class="btn btn-primary">Resume</button>
-                <a class="iconsBtns" target="_blank" href="https://www.linkedin.com/in/lcmnovaes/"><i class="fa-brands fa-lg fa-linkedin"></i></a>
-                <a class="iconsBtns" target="_blank" href="https://github.com/luisacmn"><i class="fa-brands fa-lg fa-github"></i></a>
-                <a class="iconsBtns" target="_blank" href="https://twitter.com/luisacoding"><i class="fa-brands fa-lg fa-twitter"></i></a> 
+        <div class="row">
+            <div class="col-lg-5 col-12 title-box">
+                <h5>Hi! I'm </h5>
+                <h1>Luísa Novaes</h1>
+                <h4>I'm a <span class="colored-txt">frontend developer</span></h4>
+                <div>
+                    <button class="btn btn-primary" >Resume</button>
+                    <a class="iconsBtns" target="_blank" href="https://www.linkedin.com/in/lcmnovaes/"><i class="fa-brands fa-lg fa-linkedin"></i></a>
+                    <a class="iconsBtns" target="_blank" href="https://github.com/luisacmn"><i class="fa-brands fa-lg fa-github"></i></a>
+                    <a class="iconsBtns" target="_blank" href="https://twitter.com/luisacoding"><i class="fa-brands fa-lg fa-twitter"></i></a> 
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6 image-box">
-            <img class="header-img" src="images/vecteezy_isometric-style-illustration-of-a-programmer_.jpg" alt="">
+            <div class="col-lg-4 col-12">
+                <img class="header-img" src="images/pc-isometric.png" alt="">
+            </div>
         </div>
     </header>
     </section>
@@ -72,65 +76,55 @@
     <section id="about">
         <div class="container">
             <h3>About Me</h3>
-            <img src="images/luisaImg.png" alt="">
-            <div class="info-box">
-                <p>Hello! I'm Luisa. I'm a front-end developer and also an architect. For over 8 years I've worked with building design, 3D modeling and project management to create interesting experiences for users. Due to my passion for technology and problem-solving, I've moved from architecture to software engineering, In which I seek to positively impact people's lives through the internet.</p>
-            </div>  
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <img src="images/luisaImg.png" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-12 txt">
+                    <p>Hello! I'm Luísa. </p>
+                    <p>I'm a Junior front-end developer passionate technology, design and problem-solving. I've moved into software engineering to positively impact people's lives through the internet. </p>
+                    <p>For the past six months, I've been studying and developing responsive front-end projects in JavaScript and React JS. </p>
+                </div>
+            </div> 
         </div>
     </section>
 
-
     <section id="skills">
-            <h3 >Skills</h3>
-            <h5>Frontend development</h5>
+        <h3 >Skills</h3>
         <div class="container">
-            <div class="col-lg-6 skill-img-box">
-                <img src="images/vecteezy_isometric-illustration-concept-analyzing-programming-languages_5638070.jpg" alt="">
-            </div>
-            <div class="col-lg-6 skill-box">
-                <div class="skill-content">
-                    <img class="icon-img" src="images/html.svg" alt="HTML">
+            <div class="row">
+                <h5>Web Development</h5>
+                <div class="col-3 col-md-3 col-lg-1  icon-box">
+                    <i class="fa-brands fa-html5 fa-2x"></i>
                     <p>HTML</p>
                 </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/css.svg" alt="CSS">
+                <div class="col-3 col-md-3  col-lg-1 icon-box">
+                    <i class="fa-brands fa-css3-alt fa-2x"></i>
                     <p>CSS</p>
                 </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/javascript.svg" alt="Javascript">
+                <div class="col-3 col-md-3  col-lg-1 icon-box">
+                    <i class="fa-brands fa-js-square fa-2x"></i>
                     <p>JavaScript</p>
                 </div>
-                <div class="skill-content">
-                    <img class="icon-img bts" src="images/bootstrap.svg" alt="Bootstrap">
+                <div class="col-3 col-md-3  col-lg-1 icon-box">
+                    <i class="fa-brands fa-react fa-2x"></i>
+                    <p>React JS</p>
+                </div>
+                <div class="col-3 col-md-3  col-lg-1 icon-box fa-2x">
+                    <i class="fa-brands fa-bootstrap"></i>
                     <p>Bootstrap</p>
                 </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/jquery.svg" alt="jQuery">
-                    <p>jQuery</p>
-                </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/react.svg" alt="React">
-                    <p>React.js</p>
-                </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/vscode.svg" alt="VS Code">
-                    <p>VS Code</p>
-                </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/git.svg" alt="Git">
-                    <p>Git</p>
-                </div>
-                <div class="skill-content">
-                    <img class="icon-img" src="images/github.svg" alt="Github">
+                <div class="col-3 col-md-3  col-lg-1 icon-box fa-2x">
+                    <i class="fa-brands fa-github"></i>
                     <p>GitHub</p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <section id="projects" class="carousel">
         <h3 >Projects</h3>
+        <h5>Front-End</h5>
         <div class="container">
             <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -139,7 +133,7 @@
                             <img src="images/url-short.png" class="card-img-top" alt="TodoApp">
                             <div class="card-body">
                             <h5 class="card-title">URL Shortner</h5>
-                            <p class="card-skill">HTML, CSS, Bootstrap, JavaScript, API</p>
+                            <p class="card-skill">HTML | CSS | Bootstrap | JavaScript | API</p>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             <a href="https://luisacmn.github.io/URL-Shortner/" target="_blank" class="btn cardBtn"><i class="fa-solid fa-desktop"></i></a>
                             <a href="https://github.com/luisacmn/URL-Shortner" target="_blank" class="btn cardBtn"><i class="fa-solid fa-code"></i></a>
@@ -151,7 +145,7 @@
                             <img src="images/nasa-gallery.png" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">NASA Gallery</h5>
-                            <p class="card-skill">HTML, CSS, Bootstrap, JavaScript, API</p>
+                            <p class="card-skill">HTML | CSS | Bootstrap | JavaScript | API</p>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             <a href="https://luisacmn.github.io/Nasa-gallery/" target="_blank" class="btn cardBtn"><i class="fa-solid fa-desktop"></i></a>
                             <a href="https://github.com/luisacmn/Nasa-gallery" target="_blank" class="btn cardBtn"><i class="fa-solid fa-code"></i></a>
@@ -163,7 +157,7 @@
                             <img src="images/weatherApp.png" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Weather App</h5>
-                            <p class="card-skill">React, REST API</p>
+                            <p class="card-skill">Bootstrap | React | REST API</p>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             <a href="https://csb-p7syt9.netlify.app/" target="_blank" class="btn cardBtn"><i class="fa-solid fa-desktop"></i></a>
                             <a href="https://github.com/luisacmn/Weather-app" target="_blank" class="btn cardBtn"><i class="fa-solid fa-code"></i></a>
@@ -244,19 +238,21 @@
     </section>
 
     <section id="contact">
+        <h3>Contact</h3>
+        <h5>Get in Touch</h5>
         <div class="container">
-            <h3>Contact</h3>
-            <h5>Get in Touch</h5>
-            <i class="fa-solid fa-envelope"></i><span>luisanovaes.arq@gmail.com</span>
-            <form action="https://formsubmit.co/luisanovaes.arq@gmail.com" method="POST" id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Name *" required>
-                    <input type="email" name="email" class="form-control" placeholder="Email *" required>
-                    <textarea class="form-control" name="message" id="messageinput" rows="4" placeholder="Message *"></textarea>                        
-                    <button type="submit" class="btn coloredBtn submit-btn">Submit</button>
-                    <p class="submited-txt"></p>
-                </div>
-            </form> 
+            <div class="row">
+                <div><i class="fa-solid fa-envelope"></i><span>luisanovaes.arq@gmail.com</span></div>
+                <form class="col-lg-6 col-md-12" action="https://formsubmit.co/luisanovaes.arq@gmail.com" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Name *" required>
+                        <input type="email" name="email" class="form-control" placeholder="Email *" required>
+                        <textarea class="form-control" name="message" id="messageinput" rows="4" placeholder="Message *"></textarea>                        
+                        <button type="submit" class="btn coloredBtn submit-btn">Submit</button>
+                        <p class="submited-txt"></p>
+                    </div>
+                </form> 
+            </div>
         </div>  
     </section>
 
@@ -271,8 +267,7 @@
             </div>  
         </div>
         <div class="attribution"> 
-            <div>Coded by &copy <a href="https://www.linkedin.com/in/lcmnovaes/" target="_blank">Luisa Novaes</a> </div>
-            <div>Isometric Programming Vectors by <a href="https://www.vecteezy.com/free-vector/isometric-programming">Vecteezy</a></div>      
+            <div>Coded by &copy <a href="https://www.linkedin.com/in/lcmnovaes/" target="_blank">Luisa Novaes</a> </div>      
         </div>
     </footer>
 
